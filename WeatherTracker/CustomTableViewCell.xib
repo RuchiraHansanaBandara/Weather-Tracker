@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="127" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="WeatherTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwu-hj-GIe">
+                        <rect key="frame" x="254" y="5" width="154" height="115"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" systemColor="systemPinkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbR-Mk-T4H">
+                        <rect key="frame" x="48" y="38" width="153" height="50"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="153" id="V4v-Uj-yZU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" name="AccentColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.8638495679983158" green="0.8638495679983158" blue="0.8638495679983158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CbR-Mk-T4H" secondAttribute="bottom" constant="39" id="2Sz-RV-ubz"/>
+                    <constraint firstItem="kwu-hj-GIe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2ch-7h-ofj"/>
+                    <constraint firstItem="CbR-Mk-T4H" firstAttribute="top" secondItem="kwu-hj-GIe" secondAttribute="top" constant="33" id="AQF-Hv-Re0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CbR-Mk-T4H" secondAttribute="bottom" constant="-6" id="HAu-Q4-SHa"/>
+                    <constraint firstItem="CbR-Mk-T4H" firstAttribute="bottom" secondItem="kwu-hj-GIe" secondAttribute="bottom" constant="-32" id="HpM-7D-nc9"/>
+                    <constraint firstAttribute="bottom" secondItem="CbR-Mk-T4H" secondAttribute="bottom" constant="39" id="Jp5-W8-PXQ"/>
+                    <constraint firstAttribute="bottom" secondItem="kwu-hj-GIe" secondAttribute="bottom" constant="7" id="M4t-Ql-prw"/>
+                    <constraint firstItem="CbR-Mk-T4H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="RQC-qu-sNn"/>
+                    <constraint firstItem="CbR-Mk-T4H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-17" id="W7P-n3-DjA"/>
+                    <constraint firstItem="CbR-Mk-T4H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="cg5-bL-PsY"/>
+                    <constraint firstItem="kwu-hj-GIe" firstAttribute="leading" secondItem="CbR-Mk-T4H" secondAttribute="trailing" constant="53" id="nLW-uk-RGe"/>
+                    <constraint firstItem="CbR-Mk-T4H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="28" id="xGA-yB-dfO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityLable" destination="CbR-Mk-T4H" id="sf8-V0-EbX"/>
+                <outlet property="tempLable" destination="kwu-hj-GIe" id="POa-ec-tEy"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
